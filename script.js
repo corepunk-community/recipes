@@ -44,63 +44,52 @@ function createEffectFilters(recipes) {
         filterContainer.id = 'filter-container';
         filterContainer.className = 'filter-container';
         
-        // Add header
-        const filterHeader = document.createElement('h2');
-        filterHeader.textContent = 'Filter by Effect';
-        filterContainer.appendChild(filterHeader);
-        
         // Insert before recipes container
         const recipesContainer = document.getElementById('recipes-container');
         recipesContainer.parentNode.insertBefore(filterContainer, recipesContainer);
     }
     
-    // Create filter elements
-    const effectFilterDiv = document.createElement('div');
-    effectFilterDiv.className = 'effect-filters';
+    // Create filter dropdown
+    const filterLabel = document.createElement('label');
+    filterLabel.textContent = 'Filter by Effect: ';
+    filterLabel.htmlFor = 'effect-filter';
     
+    const filterSelect = document.createElement('select');
+    filterSelect.id = 'effect-filter';
+    filterSelect.className = 'effect-filter';
+    
+    // Add default option
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = 'All Effects';
+    filterSelect.appendChild(defaultOption);
+    
+    // Add options for each effect type
     sortedEffectTypes.forEach(effectType => {
-        const filterOption = document.createElement('div');
-        filterOption.className = 'filter-option';
-        
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.id = `effect-${effectType.replace(/\s+/g, '-').toLowerCase()}`;
-        checkbox.dataset.effectType = effectType;
-        checkbox.addEventListener('change', applyFilters);
-        
-        const label = document.createElement('label');
-        label.htmlFor = checkbox.id;
-        label.textContent = effectType;
-        
-        filterOption.appendChild(checkbox);
-        filterOption.appendChild(label);
-        effectFilterDiv.appendChild(filterOption);
+        const option = document.createElement('option');
+        option.value = effectType;
+        option.textContent = effectType;
+        filterSelect.appendChild(option);
     });
     
-    // Add a clear filters button
-    const clearButton = document.createElement('button');
-    clearButton.textContent = 'Clear Filters';
-    clearButton.className = 'clear-filters';
-    clearButton.addEventListener('click', clearFilters);
+    // Add event listener for filter changes
+    filterSelect.addEventListener('change', applyFilters);
     
-    filterContainer.appendChild(effectFilterDiv);
-    filterContainer.appendChild(clearButton);
+    filterContainer.appendChild(filterLabel);
+    filterContainer.appendChild(filterSelect);
 }
 
 function applyFilters() {
-    // Get all checked effect filters
-    const checkedEffects = Array.from(
-        document.querySelectorAll('.effect-filters input[type="checkbox"]:checked')
-    ).map(checkbox => checkbox.dataset.effectType);
+    // Get selected effect
+    const selectedEffect = document.getElementById('effect-filter').value;
     
     let filteredRecipes = window.allRecipes;
     
-    // If we have effect filters, apply them
-    if (checkedEffects.length > 0) {
+    // If an effect is selected, filter recipes
+    if (selectedEffect) {
         filteredRecipes = filteredRecipes.filter(recipe => {
             const recipeEffectTypes = recipe.effects.map(effect => effect.type);
-            // Check if recipe has ANY of the selected effects
-            return checkedEffects.some(effect => recipeEffectTypes.includes(effect));
+            return recipeEffectTypes.includes(selectedEffect);
         });
     }
     
@@ -109,10 +98,8 @@ function applyFilters() {
 }
 
 function clearFilters() {
-    // Uncheck all checkboxes
-    document.querySelectorAll('.effect-filters input[type="checkbox"]').forEach(checkbox => {
-        checkbox.checked = false;
-    });
+    // Reset dropdown to default
+    document.getElementById('effect-filter').value = '';
     
     // Reset to show all recipes
     displayRecipes(window.allRecipes);

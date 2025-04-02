@@ -25,34 +25,27 @@
             padding: 15px;
             margin-bottom: 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .filter-container h2 {
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-            color: #333;
-        }
-        
-        .effect-filters {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-        
-        .filter-option {
             display: flex;
             align-items: center;
-            background-color: #f0f0f0;
-            padding: 5px 10px;
-            border-radius: 15px;
         }
         
-        .filter-option label {
-            margin-left: 5px;
-            font-size: 0.9rem;
-            cursor: pointer;
+        .filter-container label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .effect-filter {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            background-color: #f9f9f9;
+            min-width: 200px;
+        }
+        
+        .effect-filter:focus {
+            outline: none;
+            border-color: #2980b9;
         }
         
         .clear-filters {
