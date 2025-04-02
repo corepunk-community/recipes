@@ -6,6 +6,13 @@ async function fetchRecipes() {
     try {
         const response = await fetch('recipes.json');
         const recipes = await response.json();
+        
+        // Store recipes globally for filtering
+        window.allRecipes = recipes;
+        
+        // Create effect filters before displaying recipes
+        createEffectFilters(recipes);
+        
         displayRecipes(recipes);
     } catch (error) {
         console.error('Error loading recipes:', error);
@@ -18,9 +25,107 @@ async function fetchRecipes() {
     }
 }
 
+function createEffectFilters(recipes) {
+    // Extract all unique effect types from recipes
+    const effectTypes = new Set();
+    recipes.forEach(recipe => {
+        recipe.effects.forEach(effect => {
+            effectTypes.add(effect.type);
+        });
+    });
+    
+    // Sort effect types alphabetically
+    const sortedEffectTypes = Array.from(effectTypes).sort();
+    
+    // Create filter container if it doesn't exist
+    let filterContainer = document.getElementById('filter-container');
+    if (!filterContainer) {
+        filterContainer = document.createElement('div');
+        filterContainer.id = 'filter-container';
+        filterContainer.className = 'filter-container';
+        
+        // Add header
+        const filterHeader = document.createElement('h2');
+        filterHeader.textContent = 'Filter by Effect';
+        filterContainer.appendChild(filterHeader);
+        
+        // Insert before recipes container
+        const recipesContainer = document.getElementById('recipes-container');
+        recipesContainer.parentNode.insertBefore(filterContainer, recipesContainer);
+    }
+    
+    // Create filter elements
+    const effectFilterDiv = document.createElement('div');
+    effectFilterDiv.className = 'effect-filters';
+    
+    sortedEffectTypes.forEach(effectType => {
+        const filterOption = document.createElement('div');
+        filterOption.className = 'filter-option';
+        
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `effect-${effectType.replace(/\s+/g, '-').toLowerCase()}`;
+        checkbox.dataset.effectType = effectType;
+        checkbox.addEventListener('change', applyFilters);
+        
+        const label = document.createElement('label');
+        label.htmlFor = checkbox.id;
+        label.textContent = effectType;
+        
+        filterOption.appendChild(checkbox);
+        filterOption.appendChild(label);
+        effectFilterDiv.appendChild(filterOption);
+    });
+    
+    // Add a clear filters button
+    const clearButton = document.createElement('button');
+    clearButton.textContent = 'Clear Filters';
+    clearButton.className = 'clear-filters';
+    clearButton.addEventListener('click', clearFilters);
+    
+    filterContainer.appendChild(effectFilterDiv);
+    filterContainer.appendChild(clearButton);
+}
+
+function applyFilters() {
+    // Get all checked effect filters
+    const checkedEffects = Array.from(
+        document.querySelectorAll('.effect-filters input[type="checkbox"]:checked')
+    ).map(checkbox => checkbox.dataset.effectType);
+    
+    let filteredRecipes = window.allRecipes;
+    
+    // If we have effect filters, apply them
+    if (checkedEffects.length > 0) {
+        filteredRecipes = filteredRecipes.filter(recipe => {
+            const recipeEffectTypes = recipe.effects.map(effect => effect.type);
+            // Check if recipe has ANY of the selected effects
+            return checkedEffects.some(effect => recipeEffectTypes.includes(effect));
+        });
+    }
+    
+    // Display the filtered recipes
+    displayRecipes(filteredRecipes);
+}
+
+function clearFilters() {
+    // Uncheck all checkboxes
+    document.querySelectorAll('.effect-filters input[type="checkbox"]').forEach(checkbox => {
+        checkbox.checked = false;
+    });
+    
+    // Reset to show all recipes
+    displayRecipes(window.allRecipes);
+}
+
 function displayRecipes(recipes) {
     const container = document.getElementById('recipes-container');
-    container.innerHTML = ''; // Clear loading message
+    container.innerHTML = ''; // Clear loading message or previous recipes
+    
+    if (recipes.length === 0) {
+        container.innerHTML = '<div class="no-results">No recipes match your selected filters</div>';
+        return;
+    }
     
     recipes.forEach(recipe => {
         const recipeCard = createRecipeCard(recipe);
