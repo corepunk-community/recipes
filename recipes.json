@@ -1,0 +1,628 @@
+[
+  {
+    "name": "Adrenaline Rush Roll",
+    "number": 2,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Adrenaline Bladder",
+        "required": 1,
+        "sprite": "Adrenaline_bladder.png"
+      },
+      {
+        "name": "Red mushroom",
+        "required": 1,
+        "sprite": "Red_mushroom.png"
+      },
+      {
+        "name": "Carrot",
+        "required": 1,
+        "sprite": "Carrot.png"
+      },
+      {
+        "name": "Purple mushroom",
+        "required": 1,
+        "sprite": "Purple_mushroom.png"
+      },
+      {
+        "name": "Corn Flour",
+        "required": 1,
+        "sprite": "Corn_flour.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Health Regeneration",
+        "value": 52.2,
+        "duration": "20 seconds"
+      },
+      {
+        "type": "Attack Speed",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "adrenalin_rushroll.png"
+  },
+  {
+    "name": "Tacos Gonados",
+    "number": 1,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Corn Flour",
+        "required": 1,
+        "sprite": "Corn_flour.png"
+      },
+      {
+        "name": "Gonad",
+        "required": 1,
+        "sprite": "Gonad.png"
+      },
+      {
+        "name": "Red mushroom",
+        "required": 1,
+        "sprite": "Red_mushroom.png"
+      },
+      {
+        "name": "Onion",
+        "required": 1,
+        "sprite": "Onion.png"
+      },
+      {
+        "name": "Salt",
+        "required": 1,
+        "sprite": "Salt.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Health Regeneration",
+        "value": 52.2,
+        "duration": "25 seconds"
+      },
+      {
+        "type": "Attack Power",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "tacos_gonados.png"
+  },
+  {
+    "name": "Monster Mike Sandwich",
+    "number": 1,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Carnivorous Plant",
+        "required": 1,
+        "sprite": "Carnivorous_plant.png"
+      },
+      {
+        "name": "Salt",
+        "required": 1,
+        "sprite": "Salt.png"
+      },
+      {
+        "name": "Dorpurplu Cheese",
+        "required": 1,
+        "sprite": "dorpurplu_cheese.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Mana Regeneration",
+        "value": 34,
+        "duration": "25 seconds"
+      },
+      {
+        "type": "Physical Crit Chance",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "monster_mike_sandwich.png"
+  },
+  {
+    "name": "Monster Plant Tacos",
+    "number": 1,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Red mushroom",
+        "required": 3,
+        "sprite": "Red_mushroom.png"
+      },
+      {
+        "name": "Carnivorous Plant",
+        "required": 1,
+        "sprite": "Carnivorous_plant.png"
+      },
+      {
+        "name": "Salt",
+        "required": 1,
+        "sprite": "Salt.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Health Regeneration",
+        "value": 34,
+        "duration": "25 seconds"
+      },
+      {
+        "type": "Physical Crit Chance",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "monster_plant_tacos.png"
+  },
+  {
+    "name": "Magic Cookie",
+    "number": 3,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Wheat Flour",
+        "required": 1,
+        "sprite": "Wheat_flour.png"
+      },
+      {
+        "name": "Magic Weeds",
+        "required": 1,
+        "sprite": "Magic_weeds.png"
+      },
+      {
+        "name": "Egg",
+        "required": 1,
+        "sprite": "Egg.png"
+      },
+      {
+        "name": "Sugar",
+        "required": 1,
+        "sprite": "Sugar.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Mana Regeneration",
+        "value": 34,
+        "duration": "20 seconds"
+      },
+      {
+        "type": "Spell Power",
+        "value": "5%",
+        "duration": "5 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "magic_cookies #38886.png"
+  },
+  {
+    "name": "Mana Pasta",
+    "number": 1,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Mana Resin",
+        "required": 1,
+        "sprite": "Mana_resin.png"
+      },
+      {
+        "name": "Red fish filet",
+        "required": 2,
+        "sprite": "Red_fish_filet.png"
+      },
+      {
+        "name": "Wheat Flour",
+        "required": 1,
+        "sprite": "Wheat_flour.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Health Regeneration",
+        "value": 52.2,
+        "duration": "40 seconds"
+      },
+      {
+        "type": "Mana Regeneration",
+        "value": 34,
+        "duration": "40 seconds"
+      },
+      {
+        "type": "Mana",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "mana_pasta.png"
+  },
+  {
+    "name": "Ramen",
+    "number": 1,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Gonad",
+        "required": 1,
+        "sprite": "Gonad.png"
+      },
+      {
+        "name": "Egg",
+        "required": 3,
+        "sprite": "Egg.png"
+      },
+      {
+        "name": "Wheat Flour",
+        "required": 2,
+        "sprite": "Wheat_flour.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Health Regeneration",
+        "value": 52.2,
+        "duration": "35 seconds"
+      },
+      {
+        "type": "Attack Power",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "ramen.png"
+  },
+  {
+    "name": "Lucky Salad",
+    "number": 2,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Six-leaf Clover",
+        "required": 1,
+        "sprite": "Six-leaf_clover.png"
+      },
+      {
+        "name": "Piece pumpkin",
+        "required": 1,
+        "sprite": "Piece_of_pumpkin #40453.png"
+      },
+      {
+        "name": "Onion",
+        "required": 1,
+        "sprite": "Onion.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Mana Regeneration",
+        "value": 34,
+        "duration": "20 seconds"
+      },
+      {
+        "type": "Magical Crit Chance",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "lucky_salad.png"
+  },
+  {
+    "name": "Eyekebab",
+    "number": 3,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Carrot",
+        "required": 1,
+        "sprite": "Carrot.png"
+      },
+      {
+        "name": "Eggplant",
+        "required": 1,
+        "sprite": "Eggplant.png"
+      },
+      {
+        "name": "Eye of the Beast",
+        "required": 3,
+        "sprite": "Eye_of_the_beast.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Health Regeneration",
+        "value": 52.2,
+        "duration": "20 seconds"
+      },
+      {
+        "type": "Vision Radius",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "eyekebab.png"
+  },
+  {
+    "name": "JeddEye Tea",
+    "number": 1,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Fragrant Root",
+        "required": 1,
+        "sprite": "Fragrant_root.png"
+      },
+      {
+        "name": "Jute",
+        "required": 1,
+        "sprite": "Jedd.png"
+      },
+      {
+        "name": "Eye of the Beast",
+        "required": 1,
+        "sprite": "Eye_of_the_beast.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Health Regeneration",
+        "value": 52.2,
+        "duration": "35 seconds"
+      },
+      {
+        "type": "Health",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "jeddeye_tea.png"
+  },
+  {
+    "name": "Monster Eye Pizza",
+    "number": 1,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Eye of the Beast",
+        "required": 1,
+        "sprite": "Eye_of_the_beast.png"
+      },
+      {
+        "name": "Wheat Flour",
+        "required": 1,
+        "sprite": "Wheat_flour.png"
+      },
+      {
+        "name": "Dorpurplu Cheese",
+        "required": 1,
+        "sprite": "dorpurplu_cheese.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Health Regeneration",
+        "value": 52.2,
+        "duration": "25 seconds"
+      },
+      {
+        "type": "Vision Radius",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "monstereye_pizza #32240.png"
+  },
+  {
+    "name": "Pasta \"Bloodonjeze\"",
+    "number": 1,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Egg",
+        "required": 3,
+        "sprite": "Egg.png"
+      },
+      {
+        "name": "Living Blood",
+        "required": 1,
+        "sprite": "Living_Blood.png"
+      },
+      {
+        "name": "Wheat Flour",
+        "required": 2,
+        "sprite": "Wheat_flour.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Health Regeneration",
+        "value": 52.2,
+        "duration": "25 seconds"
+      },
+      {
+        "type": "Health Regeneration",
+        "value": "2%",
+        "duration": "15 minutes"
+      },
+      {
+        "type": "Movement Speed",
+        "value": "-5%",
+        "duration": "15 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "pasta_bloodonjeze.png"
+  },
+  {
+    "name": "Lotus Tea",
+    "number": 2,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Blue Lotus",
+        "required": 1,
+        "sprite": "Blue_lotus.png"
+      },
+      {
+        "name": "Fragrant Root",
+        "required": 1,
+        "sprite": "Fragrant_root.png"
+      },
+      {
+        "name": "Jute",
+        "required": 1,
+        "sprite": "Jedd.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Mana Regeneration",
+        "value": 34,
+        "duration": "25 seconds"
+      },
+      {
+        "type": "Heal and Shield Power",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "lotus_tea.png"
+  },
+  {
+    "name": "Cheesemana Cake",
+    "number": 2,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "required": 1,
+        "sprite": "Sugar.png"
+      },
+      {
+        "name": "Mana Resin",
+        "required": 1,
+        "sprite": "Mana_resin.png"
+      },
+      {
+        "name": "Cheese",
+        "required": 1,
+        "sprite": "Cheese.png"
+      },
+      {
+        "name": "Blueberry",
+        "required": 1,
+        "sprite": "Blueberry.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Mana Regeneration",
+        "value": 34,
+        "duration": "15 seconds"
+      },
+      {
+        "type": "Mana",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "chesemana_cake.png"
+  },
+  {
+    "name": "Titan Sandwich",
+    "number": 3,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Wild Berry Bread",
+        "required": 1,
+        "sprite": "Wild_Berry_Bread.png"
+      },
+      {
+        "name": "Crunchy Grilled Eggplant",
+        "required": 6,
+        "sprite": "Crunchy_grilled_eggplant.png"
+      },
+      {
+        "name": "Titanium Ointment",
+        "required": 1,
+        "sprite": "consumable_titanium_ointment_t1.png"
+      },
+      {
+        "name": "Cheese",
+        "required": 1,
+        "sprite": "Cheese.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Mana Regeneration",
+        "value": 34,
+        "duration": "30 seconds"
+      },
+      {
+        "type": "Incoming damage from main attacks",
+        "value": "-10%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "titansandwich #32311.png"
+  },
+  {
+    "name": "Energy Egg Toast",
+    "number": 3,
+    "needLevel": 1,
+    "ingredients": [
+      {
+        "name": "Egg",
+        "required": 3,
+        "sprite": "Egg.png"
+      },
+      {
+        "name": "Bread",
+        "required": 1,
+        "sprite": "Bread.png"
+      },
+      {
+        "name": "Star Energy",
+        "required": 1,
+        "sprite": "Star_energy.png"
+      },
+      {
+        "name": "Cheese",
+        "required": 1,
+        "sprite": "Cheese.png"
+      }
+    ],
+    "effects": [
+      {
+        "type": "Health Regeneration",
+        "value": 52.2,
+        "duration": "30 seconds"
+      },
+      {
+        "type": "Movement Speed",
+        "value": "5%",
+        "duration": "10 minutes"
+      }
+    ],
+    "satietyEffect": true,
+    "sprite": "energy_egg_toast.png"
+  }
+]
