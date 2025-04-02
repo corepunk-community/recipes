@@ -64,6 +64,41 @@ function createRecipeCard(recipe) {
     const content = document.createElement('div');
     content.className = 'recipe-content';
     
+    // Effects section (excluding Health/Mana Regeneration)
+    const filteredEffects = recipe.effects.filter(effect => 
+        effect.type !== 'Health Regeneration' && effect.type !== 'Mana Regeneration'
+    );
+    
+    if (filteredEffects.length > 0) {
+        const effectsSection = document.createElement('div');
+        effectsSection.className = 'recipe-section';
+        
+        const effectsTitle = document.createElement('h3');
+        effectsTitle.textContent = 'Effects';
+        effectsSection.appendChild(effectsTitle);
+        
+        const effectsList = document.createElement('div');
+        effectsList.className = 'effects-list';
+        
+        filteredEffects.forEach(effect => {
+            const effectElem = document.createElement('div');
+            effectElem.className = 'effect';
+            
+            // Create effect description
+            effectElem.innerHTML = `${effect.type}: <span>${effect.value}</span>`;
+            
+            // Add duration if available
+            if (effect.duration) {
+                effectElem.innerHTML += ` for ${effect.duration}`;
+            }
+            
+            effectsList.appendChild(effectElem);
+        });
+        
+        effectsSection.appendChild(effectsList);
+        content.appendChild(effectsSection);
+    }
+    
     // Ingredients section
     const ingredientsSection = document.createElement('div');
     ingredientsSection.className = 'recipe-section';
@@ -104,41 +139,6 @@ function createRecipeCard(recipe) {
     
     ingredientsSection.appendChild(ingredientsList);
     content.appendChild(ingredientsSection);
-    
-    // Effects section (excluding Health/Mana Regeneration)
-    const filteredEffects = recipe.effects.filter(effect => 
-        effect.type !== 'Health Regeneration' && effect.type !== 'Mana Regeneration'
-    );
-    
-    if (filteredEffects.length > 0) {
-        const effectsSection = document.createElement('div');
-        effectsSection.className = 'recipe-section';
-        
-        const effectsTitle = document.createElement('h3');
-        effectsTitle.textContent = 'Effects';
-        effectsSection.appendChild(effectsTitle);
-        
-        const effectsList = document.createElement('div');
-        effectsList.className = 'effects-list';
-        
-        filteredEffects.forEach(effect => {
-            const effectElem = document.createElement('div');
-            effectElem.className = 'effect';
-            
-            // Create effect description
-            effectElem.innerHTML = `${effect.type}: <span>${effect.value}</span>`;
-            
-            // Add duration if available
-            if (effect.duration) {
-                effectElem.innerHTML += ` for ${effect.duration}`;
-            }
-            
-            effectsList.appendChild(effectElem);
-        });
-        
-        effectsSection.appendChild(effectsList);
-        content.appendChild(effectsSection);
-    }
     
     card.appendChild(content);
     return card;
