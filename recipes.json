@@ -202,7 +202,7 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "magic_cookies #38886.png"
+    "sprite": "magic_cookies.png"
   },
   {
     "name": "Mana Pasta",
@@ -294,7 +294,7 @@
       {
         "name": "Piece pumpkin",
         "required": 1,
-        "sprite": "Piece_of_pumpkin #40453.png"
+        "sprite": "Piece_of_pumpkin.png"
       },
       {
         "name": "Onion",
@@ -423,7 +423,7 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "monstereye_pizza #32240.png"
+    "sprite": "monstereye_pizza.png"
   },
   {
     "name": "Pasta \"Bloodonjeze\"",
@@ -582,7 +582,7 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "titansandwich #32311.png"
+    "sprite": "titansandwich.png"
   },
   {
     "name": "Energy Egg Toast",
