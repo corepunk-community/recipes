@@ -272,15 +272,10 @@ function createRecipeCard(recipe) {
         
         const ingredientName = document.createElement('div');
         ingredientName.className = 'ingredient-name';
-        ingredientName.textContent = ingredient.name;
-        
-        const ingredientQuantity = document.createElement('div');
-        ingredientQuantity.className = 'ingredient-quantity';
-        ingredientQuantity.textContent = `x${ingredient.required}`;
+        ingredientName.textContent = `${ingredient.name} x${ingredient.required}`;
         
         ingredientElem.appendChild(ingredientImg);
         ingredientElem.appendChild(ingredientName);
-        ingredientElem.appendChild(ingredientQuantity);
         
         ingredientsList.appendChild(ingredientElem);
     });
