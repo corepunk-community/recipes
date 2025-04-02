@@ -99,6 +99,44 @@ function createRecipeCard(recipe) {
         content.appendChild(effectsSection);
     }
     
+    // Sources section (add this new section between effects and ingredients)
+    if (recipe.sources && recipe.sources.length > 0) {
+        const sourcesSection = document.createElement('div');
+        sourcesSection.className = 'recipe-section';
+        
+        const sourcesTitle = document.createElement('h3');
+        sourcesTitle.textContent = 'Sources';
+        sourcesSection.appendChild(sourcesTitle);
+        
+        const sourcesList = document.createElement('div');
+        sourcesList.className = 'sources-list';
+        
+        // Create two columns for the sources
+        const leftColumn = document.createElement('ul');
+        leftColumn.className = 'sources-column';
+        
+        const rightColumn = document.createElement('ul');
+        rightColumn.className = 'sources-column';
+        
+        // Distribute sources between columns
+        recipe.sources.forEach((source, index) => {
+            const sourceItem = document.createElement('li');
+            sourceItem.textContent = source;
+            
+            // Add to left column if index is even, right column if odd
+            if (index % 2 === 0) {
+                leftColumn.appendChild(sourceItem);
+            } else {
+                rightColumn.appendChild(sourceItem);
+            }
+        });
+        
+        sourcesList.appendChild(leftColumn);
+        sourcesList.appendChild(rightColumn);
+        sourcesSection.appendChild(sourcesList);
+        content.appendChild(sourcesSection);
+    }
+    
     // Ingredients section
     const ingredientsSection = document.createElement('div');
     ingredientsSection.className = 'recipe-section';

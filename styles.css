@@ -146,6 +146,24 @@ footer {
     color: #666;
 }
 
+.sources-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.sources-column {
+    flex: 1;
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+.sources-column li {
+    font-size: 0.85rem;
+    padding: 3px 0;
+    color: #555;
+}
+
 @media (max-width: 768px) {
     #recipes-container {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

@@ -43,7 +43,13 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "adrenalin_rushroll.png"
+    "sprite": "adrenalin_rushroll.png",
+    "sources": [
+      "Ivie Clarkson - Goldenfield",
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Tacos Gonados",
@@ -89,7 +95,13 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "tacos_gonados.png"
+    "sprite": "tacos_gonados.png",
+    "sources": [
+      "Ivie Clarkson - Goldenfield",
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Monster Mike Sandwich",
@@ -161,7 +173,12 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "monster_plant_tacos.png"
+    "sprite": "monster_plant_tacos.png",
+    "sources": [
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Magic Cookie",
@@ -202,7 +219,12 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "magic_cookies.png"
+    "sprite": "magic_cookies.png",
+    "sources": [
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Mana Pasta",
@@ -243,7 +265,13 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "mana_pasta.png"
+    "sprite": "mana_pasta.png",
+    "sources": [
+      "Big Mama - Goldenfield",
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Ramen",
@@ -279,7 +307,13 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "ramen.png"
+    "sprite": "ramen.png",
+    "sources": [
+      "Big Mama - Goldenfield",
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Lucky Salad",
@@ -315,7 +349,12 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "lucky_salad.png"
+    "sprite": "lucky_salad.png",
+    "sources": [
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Eyekebab",
@@ -351,7 +390,13 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "eyekebab.png"
+    "sprite": "eyekebab.png",
+    "sources": [
+      "Ivie Clarkson - Goldenfield",
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "JeddEye Tea",
@@ -387,7 +432,12 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "jeddeye_tea.png"
+    "sprite": "jeddeye_tea.png",
+    "sources": [
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Monster Eye Pizza",
@@ -423,7 +473,13 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "monstereye_pizza.png"
+    "sprite": "monstereye_pizza.png",
+    "sources": [
+      "Ivie Clarkson - Goldenfield",
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Pasta \"Bloodonjeze\"",
@@ -464,7 +520,13 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "pasta_bloodonjeze.png"
+    "sprite": "pasta_bloodonjeze.png",
+    "sources": [
+      "Big Mama - Goldenfield",
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Lotus Tea",
@@ -541,7 +603,13 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "chesemana_cake.png"
+    "sprite": "chesemana_cake.png",
+    "sources": [
+      "Ivie Clarkson - Goldenfield",
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Titan Sandwich",
@@ -582,7 +650,15 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "titansandwich.png"
+    "sprite": "titansandwich.png",
+    "sources": [
+      "Big Mama - Goldenfield",
+      "Garveth Nox - Riverrise",
+      "Titan Quest Line",
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Energy Egg Toast",
@@ -623,6 +699,14 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "energy_egg_toast.png"
+    "sprite": "energy_egg_toast.png",
+    "sources": [
+      "Big Mama - Goldenfield",
+      "Garveth Nox - Riverrise",
+      "Triton Quest Line",
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   }
 ]
