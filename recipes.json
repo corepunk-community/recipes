@@ -137,7 +137,12 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "monster_mike_sandwich.png"
+    "sprite": "monster_mike_sandwich.png",
+    "sources": [
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Monster Plant Tacos",
@@ -562,7 +567,12 @@
       }
     ],
     "satietyEffect": true,
-    "sprite": "lotus_tea.png"
+    "sprite": "lotus_tea.png",
+    "sources": [
+      "Bottles",
+      "House Interactables",
+      "Fridges"
+    ]
   },
   {
     "name": "Cheesemana Cake",
