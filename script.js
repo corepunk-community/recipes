@@ -65,9 +65,27 @@ function createRecipeCard(recipe) {
     content.className = 'recipe-content';
     
     // Effects section (excluding Health/Mana Regeneration)
-    const filteredEffects = recipe.effects.filter(effect => 
-        effect.type !== 'Health Regeneration' && effect.type !== 'Mana Regeneration'
-    );
+    const filteredEffects = recipe.effects.filter(effect => {
+        if (!effect.duration) return true;
+        
+        // Parse the duration string
+        const durationParts = effect.duration.split(' ');
+        const value = parseFloat(durationParts[0]);
+        const unit = durationParts[1].toLowerCase();
+        
+        // Convert to minutes
+        let durationInMinutes = 0;
+        if (unit.includes('second')) {
+            durationInMinutes = value / 60;
+        } else if (unit.includes('minute')) {
+            durationInMinutes = value;
+        } else if (unit.includes('hour')) {
+            durationInMinutes = value * 60;
+        }
+        
+        // Keep effects that last longer than 2 minutes
+        return durationInMinutes > 2;
+    });
     
     if (filteredEffects.length > 0) {
         const effectsSection = document.createElement('div');
