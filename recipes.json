@@ -45,7 +45,7 @@
     "satietyEffect": true,
     "sprite": "adrenalin_rushroll.png",
     "sources": [
-      "Ivie Clarkson - Goldenfield",
+      "Ivie Clarkson (GF)",
       "Bottles",
       "House Interactables",
       "Fridges"
@@ -97,7 +97,7 @@
     "satietyEffect": true,
     "sprite": "tacos_gonados.png",
     "sources": [
-      "Ivie Clarkson - Goldenfield",
+      "Ivie Clarkson (GF)",
       "Bottles",
       "House Interactables",
       "Fridges"
@@ -267,7 +267,7 @@
     "satietyEffect": true,
     "sprite": "mana_pasta.png",
     "sources": [
-      "Big Mama - Goldenfield",
+      "Big Mama (GF)",
       "Bottles",
       "House Interactables",
       "Fridges"
@@ -309,7 +309,7 @@
     "satietyEffect": true,
     "sprite": "ramen.png",
     "sources": [
-      "Big Mama - Goldenfield",
+      "Big Mama (GF)",
       "Bottles",
       "House Interactables",
       "Fridges"
@@ -392,7 +392,7 @@
     "satietyEffect": true,
     "sprite": "eyekebab.png",
     "sources": [
-      "Ivie Clarkson - Goldenfield",
+      "Ivie Clarkson (GF)",
       "Bottles",
       "House Interactables",
       "Fridges"
@@ -475,7 +475,7 @@
     "satietyEffect": true,
     "sprite": "monstereye_pizza.png",
     "sources": [
-      "Ivie Clarkson - Goldenfield",
+      "Ivie Clarkson (GF)",
       "Bottles",
       "House Interactables",
       "Fridges"
@@ -522,7 +522,7 @@
     "satietyEffect": true,
     "sprite": "pasta_bloodonjeze.png",
     "sources": [
-      "Big Mama - Goldenfield",
+      "Big Mama (GF)",
       "Bottles",
       "House Interactables",
       "Fridges"
@@ -605,7 +605,7 @@
     "satietyEffect": true,
     "sprite": "chesemana_cake.png",
     "sources": [
-      "Ivie Clarkson - Goldenfield",
+      "Ivie Clarkson (GF)",
       "Bottles",
       "House Interactables",
       "Fridges"
@@ -652,8 +652,8 @@
     "satietyEffect": true,
     "sprite": "titansandwich.png",
     "sources": [
-      "Big Mama - Goldenfield",
-      "Garveth Nox - Riverrise",
+      "Big Mama (GF)",
+      "Garveth Nox (RR)",
       "Titan Quest Line",
       "Bottles",
       "House Interactables",
@@ -701,8 +701,8 @@
     "satietyEffect": true,
     "sprite": "energy_egg_toast.png",
     "sources": [
-      "Big Mama - Goldenfield",
-      "Garveth Nox - Riverrise",
+      "Big Mama (GF)",
+      "Garveth Nox (RR)",
       "Triton Quest Line",
       "Bottles",
       "House Interactables",
